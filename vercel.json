@@ -8,12 +8,16 @@
     "backend": {
       "root": "backend",
       "entrypoint": "index.js",
-      "routePrefix": "/_/backend"
+      "routePrefix": "/api"
     }
   },
   "rewrites": [
     {
-      "source": "/((?!_\\/backend).*)" ,
+      "source": "/api/(.*)",
+      "destination": "/api/$1"
+    },
+    {
+      "source": "/((?!api).*)",
       "destination": "/frontend/index.html"
     }
   ]
