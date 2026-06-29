@@ -19,30 +19,8 @@
   --transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
-/* Dark mode */
-@media (prefers-color-scheme: dark) {
-  body {
-    background: linear-gradient(135deg, #0a0d0f 0%, #1a2420 100%);
-    color: var(--dark-text);
-  }
-
-  .card, .container {
-    background-color: rgba(30, 45, 40, 0.6);
-    color: var(--dark-text);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(90, 157, 106, 0.2);
-  }
-
-  input, textarea, select {
-    background-color: rgba(50, 70, 65, 0.8);
-    color: var(--dark-text);
-    border: 2px solid rgba(90, 157, 106, 0.4);
-  }
-}
-
-/* Light mode */
 body {
-  background: linear-gradient(135deg, #f8faf9 0%, #eef5f1 100%);
+  background: #ffffff;
   color: var(--light-text);
   font-family: 'Poppins', sans-serif;
   line-height: 1.7;
