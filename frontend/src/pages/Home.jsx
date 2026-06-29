@@ -121,17 +121,7 @@ export default function Home() {
           style={{ top: '18px', left: '8%' }}
         />
 
-        <p style={{
-          fontSize: '0.68rem',
-          letterSpacing: '5px',
-          textTransform: 'uppercase',
-          color: '#5a9d6a',
-          opacity: 0.55,
-          marginBottom: '14px',
-          fontWeight: '500'
-        }}>
-          Nunta
-        </p>
+        
 
         <h1 className="handwriting" style={{ fontSize: 'clamp(2.8rem, 8vw, 4.4rem)', marginBottom: '6px' }}>
           Bine ai venit!
