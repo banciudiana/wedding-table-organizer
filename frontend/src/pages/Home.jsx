@@ -155,7 +155,7 @@ export default function Home() {
           <div style={{ position: 'relative', margin: '12px 0' }}>
             <input
               type="text"
-              placeholder="Introdu numele și prenumele tău"
+              placeholder="Nume Prenume"
               value={name}
               onChange={(e) => setName(e.target.value)}
               onFocus={() => name.trim().length > 0 && setShowSuggestions(true)}
