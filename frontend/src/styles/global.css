@@ -244,38 +244,3 @@ input:focus, textarea:focus, select:focus {
   gap: 12px;
 }
 
-@keyframes floatPlane {
-  0%, 100% { transform: translateY(0px) rotate(-22deg); }
-  50%       { transform: translateY(-14px) rotate(-17deg); }
-}
-
-@keyframes floatPlane2 {
-  0%, 100% { transform: translateY(0px) rotate(160deg); }
-  50%       { transform: translateY(-10px) rotate(156deg); }
-}
-
-@keyframes floatChute {
-  0%, 100% { transform: translateY(0px) rotate(-3deg); }
-  50%       { transform: translateY(-10px) rotate(3deg); }
-}
-
-.decor-plane {
-  position: absolute;
-  pointer-events: none;
-  opacity: 0.07;
-  animation: floatPlane 8s ease-in-out infinite;
-}
-
-.decor-plane-2 {
-  position: absolute;
-  pointer-events: none;
-  opacity: 0.05;
-  animation: floatPlane2 11s ease-in-out infinite 2s;
-}
-
-.decor-chute {
-  position: absolute;
-  pointer-events: none;
-  opacity: 0.06;
-  animation: floatChute 10s ease-in-out infinite 1s;
-}

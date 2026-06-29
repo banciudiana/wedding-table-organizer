@@ -1,45 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import avionImg from '../../backgroundPhoto/avionMaiBunMaria.JPG';
+import parasutistImg from '../../backgroundPhoto/paraMaria.JPG';
 import '../styles/global.css';
-
-const PlaneSVG = ({ className, style }) => (
-  <svg
-    className={className}
-    style={style}
-    width="90" height="90"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="#5a9d6a"
-    strokeWidth="1.4"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-  >
-    <line x1="22" y1="2" x2="11" y2="13" />
-    <polygon points="22 2 15 22 11 13 2 9" />
-  </svg>
-);
-
-const ParachuteSVG = ({ className, style }) => (
-  <svg
-    className={className}
-    style={style}
-    width="72" height="88"
-    viewBox="0 0 24 30"
-  >
-    <path
-      d="M2 14 Q12 2 22 14 Z"
-      fill="rgba(90,157,106,0.18)"
-      stroke="#5a9d6a"
-      strokeWidth="1.4"
-      strokeLinejoin="round"
-    />
-    <line x1="7"  y1="14" x2="12" y2="22" stroke="#5a9d6a" strokeWidth="1"   strokeLinecap="round" />
-    <line x1="12" y1="14" x2="12" y2="22" stroke="#5a9d6a" strokeWidth="1"   strokeLinecap="round" />
-    <line x1="17" y1="14" x2="12" y2="22" stroke="#5a9d6a" strokeWidth="1"   strokeLinecap="round" />
-    <circle cx="12" cy="24" r="2" fill="#5a9d6a" />
-  </svg>
-);
 
 export default function Home() {
   const [name, setName] = useState('');
@@ -103,23 +67,15 @@ export default function Home() {
       {/* Header with aviation decor */}
       <div className="header" style={{ paddingTop: '50px', paddingBottom: '40px', marginBottom: '36px' }}>
 
-        {/* Airplane — upper right */}
-        <PlaneSVG
-          className="decor-plane"
-          style={{ top: '10px', right: '6%' }}
-        />
+        <img src={parasutistImg} alt="" style={{
+          position: 'absolute', top: '-10px', right: '2%',
+          width: '100px', opacity: 0.18, pointerEvents: 'none'
+        }} />
 
-        {/* Small second plane — lower left */}
-        <PlaneSVG
-          className="decor-plane-2"
-          style={{ bottom: '20px', left: '4%', width: '52px', height: '52px' }}
-        />
-
-        {/* Parachute — right side */}
-        <ParachuteSVG
-          className="decor-chute"
-          style={{ top: '18px', left: '8%' }}
-        />
+        <img src={avionImg} alt="" style={{
+          position: 'absolute', bottom: '10px', left: '2%',
+          width: '120px', opacity: 0.18, pointerEvents: 'none'
+        }} />
 
         
 
